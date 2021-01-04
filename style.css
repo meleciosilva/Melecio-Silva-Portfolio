@@ -28,22 +28,40 @@
     font-weight: bold;
   }
 
-   /* --------------- anchor links --------------- */
+   /* --------------- nav links --------------- */
 
-   a:link {
+  nav a:link {
     color: #ffffff;
   }
 
-  a:visited {
-    color: #8500a0;
+  nav a:visited {
+    color: #F1ADFF;
   }
 
-  a:hover {
-    color: #b972da;
+  nav a:hover {
+    color: #82db9d;
   }
 
-  a:active {
-    color: #eb7cfa;
+  nav a:active {
+    color: #CDEFD7;
+  }
+
+     /* --------------- contact links --------------- */
+
+  #contact a:link {
+    color: #000000;
+  }
+
+  #contact a:visited {
+    color: #6A0080;
+  }
+
+  #contact a:hover {
+    color: #004D0D;
+  }
+
+  #contact a:active {
+    color: #113d00;
   }
 
   /* ------------------ center rules ----------------------- */
