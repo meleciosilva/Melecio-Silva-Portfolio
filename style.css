@@ -19,9 +19,9 @@
     font-size: 36px;
   }
 
-  /* --------------- navigation list --------------- */
+  /* --------------- navigation p --------------- */
 
-  nav li {
+  nav p {
     display: inline-block;
     height: 100%;
     padding: 10px 25px;
@@ -46,23 +46,23 @@
     color: #CDEFD7;
   }
 
-     /* --------------- contact links --------------- */
+  /* ------------------ google maps ----------------------- */
+  /* source: https://blog.duda.co/responsive-google-maps-for-your-website  */
 
-  #contact a:link {
-    color: #000000;
-  }
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom: 60%;
+    position:relative;
+    height:0;
+}
 
-  #contact a:visited {
-    color: #6A0080;
-  }
-
-  #contact a:hover {
-    color: #004D0D;
-  }
-
-  #contact a:active {
-    color: #113d00;
-  }
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
   /* ------------------ center rules ----------------------- */
 
@@ -98,6 +98,25 @@
   }
 
  
+/* --------------- contact links --------------- */
+
+    #contact a:link {
+    color: #000000;
+  }
+
+  #contact a:visited {
+    color: #6A0080;
+  }
+
+  #contact a:hover {
+    color: #004D0D;
+  }
+
+  #contact a:active {
+    color: #113d00;
+  }
+    
+
   /* --------------- footer --------------- */
 
   footer {
