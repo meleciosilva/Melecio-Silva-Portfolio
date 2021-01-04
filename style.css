@@ -19,13 +19,31 @@
     font-size: 36px;
   }
 
-  /* --------------- navigation links--------------- */
+  /* --------------- navigation list --------------- */
 
   nav li {
     display: inline-block;
     height: 100%;
     padding: 10px 25px;
     font-weight: bold;
+  }
+
+   /* --------------- anchor links --------------- */
+
+   a:link {
+    color: #ffffff;
+  }
+
+  a:visited {
+    color: #8500a0;
+  }
+
+  a:hover {
+    color: #b972da;
+  }
+
+  a:active {
+    color: #eb7cfa;
   }
 
   /* ------------------ center rules ----------------------- */
@@ -47,7 +65,7 @@
     padding: 30px;
   }
 
-  /* -------------------------------------------------------- */
+  /* ------------------- specific elements ------------------------- */
 
   body {
     background-color: #DFE0E2 ;
@@ -61,24 +79,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* --------------- anchor links --------------- */
-
-  a:link {
-    color: #ffffff;
-  }
-
-  a:visited {
-    color: #8500a0;
-  }
-
-  a:hover {
-    color: #b972da;
-  }
-
-  a:active {
-    color: #eb7cfa;
-  }
-
+ 
   /* --------------- footer --------------- */
 
   footer {
