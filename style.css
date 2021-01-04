@@ -100,20 +100,20 @@
  
 /* --------------- contact links --------------- */
 
-    #contact a:link {
-    color: #000000;
+  ol li a:link {
+    color: #0C17B0;
   }
 
-  #contact a:visited {
-    color: #6A0080;
+  ol li a:visited {
+    color: #530566;
   }
 
-  #contact a:hover {
-    color: #004D0D;
+  ol li a:hover {
+    color: #015107;
   }
 
-  #contact a:active {
-    color: #113d00;
+  ol li a:active {
+    color: #3d0400;
   }
     
 
