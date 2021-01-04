@@ -1,3 +1,93 @@
 * {
     box-sizing: border-box;
+}
+
+  /* --------------- header --------------- */
+
+  header {
+    height: 100%;
+    margin: 5px, 5px;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+    background-color: #2D2E2E;
+    border-color: #2D2E2E;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  /* --------------- navigation links--------------- */
+
+  nav li {
+    display: inline-block;
+    height: 100%;
+    padding: 10px 25px;
+    font-weight: bold;
+  }
+
+  /* ------------------ center rules ----------------------- */
+
+  .centerText {
+    text-align: center;
+  }
+
+  .centerImage {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .centerMain {
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+  }
+
+  /* -------------------------------------------------------- */
+
+  body {
+    background-color: #DFE0E2 ;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* --------------- anchor links --------------- */
+
+  a:link {
+    color: #ffffff;
+  }
+
+  a:visited {
+    color: #8500a0;
+  }
+
+  a:hover {
+    color: #b972da;
+  }
+
+  a:active {
+    color: #eb7cfa;
+  }
+
+  /* --------------- footer --------------- */
+
+  footer {
+    height: 100%;
+    margin: 50px, 10px;
+    padding: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+    background-color: #2D2E2E;
+    border-color: #2D2E2E;
   }
