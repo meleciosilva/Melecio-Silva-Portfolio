@@ -2,62 +2,109 @@
 <html lang='en'>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Melecio Silva</title>
     <!-- normalize.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
 
   <body>
+   
+<!-------- Header -------->
+
     <header>
-      <div>
-        <h1>Melecio Silva</h1>
-        <h2>Web Developer</h2>
-
-        <!-- Navigation Bar -->
-
-        <nav>
-          <p><a href='index.html'>Home</a></p>
-          <p><a href='#introduction'>Introduction</a></p>
-          <p><a href='#about-me'>About Me</a></p>
-          <p><a href='#contact'>Contact</a></p>
-        </nav>
-      </div>
+      <h1>Melecio Silva</h1>
+      <nav>
+        <ul>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='#about'>About Me</a></li>
+          <li><a href='#portfolio'>Portfolio</a></li>
+          <li><a href='#contact'>Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-  <main class='centerMain'>
-    <div>
-      <div class='centerImage'>
-        <img src='images/my-photo.JPG' alt='A headshot of Melecio Silva' width=400>
-      </div>
-      
-      <!-- Introduction -->
+<!-------- Main -------->
 
-      <article>
-        <h2 id='introduction'>Introduction</h2>
-        <p class='centerText'>Hi, my name is Melecio! I am a software engineering student in Richmond, VA.</p>
-  
-        <!--Google Maps -->
+    <main>
+      <section>
+        <div class='group'>
+          <div class='item'>
+            <div id='picture-name-title'>
+              <img src='images/my-photo.JPG' alt='A headshot of Melecio Silva'>
+              <h2>Melecio Silva</h2>
+              <h3>Software Engineer</h3>
+            </div>
+           <!-------- Social Links -------->
+            <div class='social-links'>
+              <ol>
+                <li>
+                  <a href='https://twitter.com/themelsilva' target='_blank'>
+                    <img src='images/twitter-icon.png' width='20px'>
+                  </a></li>
+                <li>
+                  <a href='https://github.com/meleciosilva' target='_blank'>
+                    <img src='images/github-icon.png' width='20px'>
+                  </a>
+                </li>
+                <li>
+                  <a href='https://www.linkedin.com/in/meleciosilva/' target='_blank'>
+                    <img src='images/linkedin-icon.png' width='20px'>
+                  </a>
+                </li>
+                <li>
+                  <a href = "mailto: mpsilva94+portfolio@gmail.com" target='_blank'>
+                    <img src='images/email-icon.png' width='20px'>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
 
-        <div class='map-responsive'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d202471.68572004532!2d-77.58527184134054!3d37.54045193206341!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b111095799c9ed%3A0xbfd83e6de2423cc5!2sRichmond%2C%20VA!5e0!3m2!1sen!2sus!4v1609795503959!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class='item item-double'>
+            <h2>Hi! My name is Melecio.</h2>
+            <p>Hi, my name is Melecio! I am a software engineering student in Richmond, VA.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur atque, placeat repellat nobis itaque eligendi doloribus molestiae quam. Doloribus autem at modi, aliquid enim quo libero aperiam dolore nesciunt?</p>
+          </div>
+
         </div>
-      </article>
+      </section>
 
-      <!-- horizontal ruler -->
-        <hr>
+<!-------- About Me -------->
 
-      <!-- About Me -->
+      <section id='about' class='darker-background-color'>
+        <h2>About Me</h2>
+        <div class='group'>
+          <div class='item item-double'>
+            <p>
+              My background and professional development were largely dedicated to the study of
+              strength & conditioning and rehabilitation. While studying physical therapy, I found that
+              I really enjoyed practicing critical thinking, problem-solving, and 
+              helping others in the process. However, due to unforeseen circumstances, 
+              I was forced to withdraw from university.
+            </p>
 
-      <article>
-        <h2 id='about-me'>About Me</h2>
-        <section>
-          <h3>Background</h3>
-          <p>
-            A big part of who I am revolves around the lifelong pursuit of personal development. What started as a hobby, 
-            trying to emulate the habits and behaviors of those I admired, and eventually became ingrained in my life. Outside 
-            of personal development, I enjoy spending my leisure time pursuing my hobbies:</p>
+            <p>
+              Fortunately, this gave me permission to explore other interests and the opportunity to 
+              reflect on my life's passions, goals, and aspirations. I realized that my interest in coding 
+              could lead to a fulfilling career, with more freedom to pursue my hobbies and entrepreneurial 
+              aspirations. Furthermore, so many of the hard & soft skills I gained as an aspiring physical therapist 
+              parallel those required of a software engineer!
+            </p>
+            <p>
+              For those reasons, I made the commitment and enrolled in Thinkful's software engineering course. I am so 
+              excited to learn, grow, and develop over the next few months!
+            </p>
+          </div>
+
+          <div class='item'>
+            <p>
+              A big part of who I am revolves around the lifelong pursuit of personal development. What started as a hobby, 
+              trying to emulate the habits and behaviors of those I admired, and eventually became ingrained in my life. Outside 
+              of personal development, I enjoy spending my leisure time pursuing my hobbies:</p>
             <ul>
               <li>Hiking</li>
               <li>Lifting</li>
@@ -65,59 +112,131 @@
               <li>Traveling</li>
               <li>Video Games</li>
             </ul>
-          <h3>Professional Development</h3>
-          <p>
-            My background and professional development were largely dedicated to the study of
-            strength & conditioning and rehabilitation. While studying physical therapy, I found that
-             I really enjoyed practicing critical thinking, problem-solving, and 
-             helping others in the process. However, due to unforeseen circumstances, 
-             I was forced to withdraw from university.
-          </p>
-          <h3>New Beginning</h3>
-          <p>
-            Fortunately, this gave me permission to explore other interests and the opportunity to 
-             reflect on my life's passions, goals, and aspirations. I realized that my interest in coding 
-             could lead to a fulfilling career, with more freedom to pursue my hobbies and entrepreneurial 
-             aspirations. Furthermore, so many of the hard & soft skills I gained as an aspiring physical therapist 
-             parallel those required of a software engineer!
-          </p>
-          <p>
-            For those reasons, I made the commitment and enrolled in Thinkful's software engineering course. I am so 
-            excited to learn, grow, and develop over the next few months!
-          </p>
-        </section>
-
-        <!-- horizontal ruler -->
-        <hr>
-        
-        <!-- Contact Me -->
-
-        <section id='contact'>
-          <h2>Contact Me</h2>
-          <p>
-            If you would like to connect, network, or have any questions, feel free to reach out! I 
-            look forward to meeting you!
-          </p>
-          <div>
-            <ol>
-              <li><a href='https://twitter.com/themelsilva' target='_blank'>Twitter</a></li>
-              <li><a href='https://github.com/meleciosilva' target='_blank'>Github</a></li>
-              <li><a href='https://www.linkedin.com/in/meleciosilva/' target='_blank'>LinkedIn</a></li>
-            </ol>
           </div>
-        </section>
-      </article>
-    </div>
-  </main>
+
+        </div>
+      </section>
+
+<!-------- Portfolio -------->
+
+      <section id='portfolio'>
+        
+        <h2>Portfolio</h2>
+        <div class='group center-divs'>
+          
+          <div class='item'>
+            <img src='images/placeholder.png' alt=''>
+            <h3>Project #1</h3>
+            <p>Project Description</p>
+          </div>
+
+          <div class='item'>            
+            <img src='images/placeholder.png' alt=''>
+            <h3>Project #2</h3>
+            <p>Project Description</p>
+          </div>
+
+          <div class='item'>            
+            <img src='images/placeholder.png' alt=''>
+            <h3>Project #3</h3>
+            <p>Project Description</p>
+          </div>
+          
+          <div class='item'>
+            <img src='images/placeholder.png' alt=''>
+            <h3>Project #4</h3>
+            <p>Project Description</p>
+          </div>
+
+          <div class='item'>
+            <img src='images/placeholder.png' alt=''>
+            <h3>Project #5</h3>
+            <p>Project Description</p>
+          </div>
+
+          <div class='item'>
+            <img src='images/placeholder.png' alt=''>
+            <h3>Project #6</h3>
+            <p>Project Description</p>
+          </div>
+
+        </div>
+      </section>
+
+<!-------- Contact -------->
+      <section id='contact' class='darker-background-color'>
+        <h2>Contact</h2>
+        <div class='group'>
+
+          <div class='item'>
+            <form action='https://formspree.io/f/xrgovbwq' method='POST'>
+              <fieldset>
+                <label for='name' required>Name:</label>
+                <input id='name' type='text' name='name'>
+              </fieldset>
+              <fieldset>
+                <label for='email' required>Email:</label>
+                <input id='email' type='email' name='name'>
+              </fieldset>
+              <fieldset>
+                <label for='message' required>Message:</label>
+                <textarea id='message' type='text' name='message'></textarea></textarea>
+              </fieldset>
+              <button type='submit'>Send</button>
+            </form>
+          
+          <!-------- Social Links -------->
+            <div class='social-links'>
+              <ol>
+                <li>
+                  <a href='https://twitter.com/themelsilva' target='_blank'>
+                    <img src='images/twitter-icon.png' width='20px'>
+                  </a></li>
+                <li>
+                  <a href='https://github.com/meleciosilva' target='_blank'>
+                    <img src='images/github-icon.png' width='20px'>
+                  </a>
+                </li>
+                <li>
+                  <a href='https://www.linkedin.com/in/meleciosilva/' target='_blank'>
+                    <img src='images/linkedin-icon.png' width='20px'>
+                  </a>
+                </li>
+                <li>
+                  <a href = "mailto: mpsilva94+portfolio@gmail.com" target='_blank'>
+                    <img src='images/email-icon.png' width='20px'>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+<!-------- Google Map -------->
+          <div class='item'>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d202515.3544187051!2d-77.4898307612858!3d37.524367982790984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1613249029156!5m2!1sen!2sus"
+              width=100%
+              height='400px'
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0" 
+            >
+            </iframe>
+          </div>
+
+        </div>
+      </section>
+    </main>
 
   <!-- Footer -->
 
-  <footer>
-    <div>
-      <p>&copy; Melecio Silva</p>
-    </div>
-  </footer>
-    <script src="script.js"></script>
+    <footer>
+      <div>
+        <p>&copy; Melecio Silva</p>
+      </div>
+    </footer>
+      <script src="script.js"></script>
   </body>
 
 </html>

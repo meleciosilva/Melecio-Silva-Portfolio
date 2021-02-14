@@ -1,3 +1,5 @@
+/* --------------- General Styles --------------- */
+
 * {
     box-sizing: border-box;
 }
@@ -6,130 +8,261 @@ html {
   scroll-behavior: smooth;
 }
 
-  /* --------------- header --------------- */
+body {
+  margin: 0;
+  background-color: #fff ;
+}
+
+.darker-background-color {
+  background-color: #DFE0E2;
+}
+
+/* --------------- Typography --------------- */
+
+h1 {
+  font-size: 28px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+}
+
+p {
+ font-family: 'Montserrat', sans-serif;
+ line-height: 2em;
+ margin-bottom: 0;
+}
+
+/* --------------- header --------------- */
+
+header {
+  background-color: #2D2E2E;
+}
+
+header h1 {
+  font-size: 60px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 10px 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* --------------- header - DESKTOP --------------- */
+
+
+@media all and (min-width: 600px) {
 
   header {
-    height: 100%;
-    margin: 5px, 5px;
-    padding: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #ffffff;
-    text-align: center;
-    background-color: #2D2E2E;
-    border-color: #2D2E2E;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
   }
-
-  h1 {
-    font-size: 36px;
+  
+  header h1 {
+    font-size: 48px;
+    padding: 15px 0;
   }
-
-  /* --------------- navigation p --------------- */
-
-  nav p {
-    display: inline-block;
-    height: 100%;
-    padding: 10px 25px;
-    font-weight: bold;
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
   }
-
-   /* --------------- nav links --------------- */
-
-  nav a:link {
-    color: #ffffff;
-  }
-
-  nav a:visited {
-    color: #F1ADFF;
-  }
-
-  nav a:hover {
-    color: #82db9d;
-  }
-
-  nav a:active {
-    color: #CDEFD7;
-  }
-
-  /* ------------------ google maps ----------------------- */
-  /* source: https://blog.duda.co/responsive-google-maps-for-your-website  */
-
-  .map-responsive{
-    overflow:hidden;
-    padding-bottom: 60%;
-    position:relative;
-    height:0;
 }
 
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+/* --------------- nav links --------------- */
+
+header nav ul li a:link {
+  color: #ffffff;
 }
 
-  /* ------------------ center rules ----------------------- */
+header nav ul li a:visited {
+  color: #F1ADFF;
+}
 
-  .centerText {
-    text-align: center;
+header nav ul li a:hover {
+  color: #82db9d;
+}
+
+header nav ul li a:active {
+  color: #CDEFD7;
+}
+
+/* ------------------- main ------------------------- */
+
+section {
+  padding: 20px 8px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  border: 1px red solid;
+  margin-top: 10px;
+}
+
+main img[src='images/my-photo.JPG'] {
+  border-radius: 50%;
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#picture-name-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#picture-name-title h2, h3 {
+  margin: 5px 0 5px;
+}
+
+section#portfolio img {
+  width: 100%;
+}
+
+section#portfolio .item:hover {
+  background-color: #F1ADFF;
+}
+
+/* ------------------- main - DESKTOP ------------------------- */
+
+@media all and (min-width: 600px) {
+
+  header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  section {
+    padding: 10px 50px;
   }
 
-  .centerImage {
-    display: block;
-    text-align: center;
+  #about h2, #portfolio h2, #contact h2 {
+    margin-left: 10px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    flex: 1;
     margin: 10px;
-    padding: 10px;
   }
 
-  .centerMain {
-    margin: auto;
-    width: 50%;
-    padding: 30px;
+  .item-double {
+    flex: 2;
   }
 
-  /* ------------------- specific elements ------------------------- */
-
-  body {
-    background-color: #DFE0E2 ;
+  section#portfolio .item {
+    flex-basis: 30%;
   }
 
-  h2 {
-    text-align: center;
-  }
+}
 
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+/* ------------------- social/contact links ------------------------- */
 
- 
-/* --------------- contact links --------------- */
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  ol li a:link {
-    color: #0C17B0;
-  }
+.social-links ol {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
 
-  ol li a:visited {
-    color: #530566;
-  }
+.social-links ol li a {
+  margin: 0 5px 0;
+  text-decoration: none;
 
-  ol li a:hover {
-    color: #015107;
-  }
+}
 
-  ol li a:active {
-    color: #3d0400;
-  }
-    
+/* ------------------- contact form ------------------------- */
 
-  /* --------------- footer --------------- */
+form fieldset {
+  border: none;
+}
+
+form input, textarea {
+  width: 100%;
+}
+
+form textarea {
+  height: 160px;
+}
+
+button {
+  background-color: #2D2E2E;
+  margin: 0 auto 5px;
+  display: block;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #F1ADFF;
+}
+
+
+/* ------------------- footer ------------------------- */
 
   footer {
-    height: 100%;
-    margin: 50px, 10px;
-    padding: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #ffffff;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
     background-color: #2D2E2E;
-    border-color: #2D2E2E;
+    color: #fff;
   }
