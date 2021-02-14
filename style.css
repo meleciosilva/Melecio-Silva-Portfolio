@@ -135,7 +135,6 @@ section {
 
 .item {
   flex: 1;
-  border: 1px red solid;
   margin-top: 10px;
 }
 
