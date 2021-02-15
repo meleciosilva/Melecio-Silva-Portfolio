@@ -1,5 +1,9 @@
 /* --------------- General Styles --------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -17,14 +21,32 @@ body {
   background-color: #DFE0E2;
 }
 
-/* --------------- Typography --------------- */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.centerText {
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* --------------- Typography --------------- */
 
 h1 {
   font-size: 28px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Orbitron', sans-serif;
 }
 
 h2 {
@@ -123,6 +145,50 @@ header nav ul li a:active {
   color: #CDEFD7;
 }
 
+/* ------------------- social/contact links ------------------------- */
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-links ol {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.social-links ol li a {
+  margin: 0 5px 0;
+  text-decoration: none;
+}
+
+div.social-links img:hover{
+  transform: scale(1.1);
+}
+
+/* ------------------- hobbies ------------------------- */
+
+.hobbies {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Alegreya SC', serif;
+}
+
+.hobbies div {
+  margin-top: 15px;
+}
+
+.hobbies img {
+  width: 100px;
+  height: auto;
+}
+
 /* ------------------- main ------------------------- */
 
 section {
@@ -143,7 +209,7 @@ section {
 main img[src='images/my-photo.JPG'] {
   border-radius: 50%;
   padding-top: 10px;
-  width: 100%;
+  width: 350px;
   height: auto;
 }
 
@@ -155,6 +221,10 @@ main img[src='images/my-photo.JPG'] {
 
 #picture-name-title h2, h3 {
   margin: 5px 0 5px;
+}
+
+section#about .group {
+  flex-direction: column;
 }
 
 section#portfolio .item {
@@ -170,10 +240,6 @@ section#portfolio .item:hover {
   background-color: #F1ADFF;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-}
 
 /* ------------------- main - DESKTOP ------------------------- */
 
@@ -207,31 +273,17 @@ section#portfolio .item:hover {
     flex-basis: 30%;
   }
 
-}
+  .all-hobbies {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  .hobbies {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
 
-/* ------------------- social/contact links ------------------------- */
-
-.social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.social-links ol {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 5px;
-}
-
-.social-links ol li a {
-  margin: 0 5px 0;
-  text-decoration: none;
-}
-
-div.social-links img:hover{
-  transform: scale(1.1);
 }
 
 /* ------------------- contact form ------------------------- */
@@ -253,7 +305,7 @@ form textarea {
 
 button {
   background-color: #2D2E2E;
-  margin: 0 auto 5px;
+  margin: 0 auto 15px;
   display: block;
   border: none;
   border-radius: 20px;
@@ -274,6 +326,7 @@ button:active {
   background-color: #2D2E2E;
   color: #fff;
   box-shadow: 3px 2px 10px 1px #000; 
+  text-transform: uppercase;
 }
 
 .map {
