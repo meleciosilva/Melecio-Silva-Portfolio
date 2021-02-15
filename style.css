@@ -19,22 +19,24 @@ body {
 
 /* --------------- Typography --------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 h1 {
   font-size: 28px;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
 h2 {
   font-size: 36px;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 24px;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 p {
@@ -89,7 +91,7 @@ header nav ul li:last-child a {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 70px;
   }
   
   header h1 {
@@ -136,6 +138,7 @@ section {
 .item {
   flex: 1;
   margin-top: 10px;
+  padding: 5px;
 }
 
 main img[src='images/my-photo.JPG'] {
@@ -155,7 +158,11 @@ main img[src='images/my-photo.JPG'] {
   margin: 5px 0 5px;
 }
 
-section#portfolio img {
+section#portfolio .item {
+  border: 1px #000 solid;
+}
+
+section#portfolio .item > img {
   width: 100%;
 }
 
@@ -163,21 +170,22 @@ section#portfolio .item:hover {
   background-color: #F1ADFF;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ------------------- main - DESKTOP ------------------------- */
 
 @media all and (min-width: 600px) {
 
-  header {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
   
   section {
     padding: 10px 50px;
   }
 
   #about h2, #portfolio h2, #contact h2 {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .group {
@@ -220,17 +228,23 @@ section#portfolio .item:hover {
 .social-links ol li a {
   margin: 0 5px 0;
   text-decoration: none;
+}
 
+div.social-links img:hover{
+  transform: scale(1.1);
 }
 
 /* ------------------- contact form ------------------------- */
 
 form fieldset {
   border: none;
+  margin: 0 -12px;
 }
 
 form input, textarea {
   width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 form textarea {
@@ -252,6 +266,14 @@ button {
 
 button:hover {
   background-color: #F1ADFF;
+  color: #000;
+}
+
+button:active {
+  transform: scale(0.96); 
+  background-color: #2D2E2E;
+  color: #fff;
+  box-shadow: 3px 2px 10px 1px #000; 
 }
 
 
