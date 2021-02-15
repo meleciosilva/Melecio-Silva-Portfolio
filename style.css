@@ -158,7 +158,8 @@ main img[src='images/my-photo.JPG'] {
 }
 
 section#portfolio .item {
-  border: 1px #000 solid;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
 section#portfolio .item > img {
