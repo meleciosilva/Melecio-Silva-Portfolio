@@ -234,6 +234,7 @@ section#portfolio .item {
 }
 
 section#portfolio .item > img {
+  border-radius: 10px;
   width: 100%;
 }
 
