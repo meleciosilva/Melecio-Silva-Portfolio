@@ -10,11 +10,18 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 110px; /* prevents overlaying of content with nav bar links */
+}
+
+@media all and (min-width: 600px) {
+  html {
+    scroll-padding-top: 70px;
+  }
 }
 
 body {
   margin: 0;
-  background-color: #fff ;
+  background-color: #fff;
 }
 
 .darker-background-color {
@@ -71,6 +78,10 @@ p {
 
 header {
   background-color: #2D2E2E;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 header h1 {
@@ -84,7 +95,7 @@ header h1 {
 header nav {
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: #fff;  
 }
 
 header nav ul {
@@ -214,6 +225,10 @@ main img[src='images/my-photo.JPG'] {
   height: auto;
 }
 
+section#introduction {
+  margin-top: 130px
+}
+
 #picture-name-title {
   display: flex;
   flex-direction: column;
@@ -245,11 +260,15 @@ section#portfolio .item:hover {
 
 /* ------------------- main - DESKTOP ------------------------- */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
 
   
   section {
     padding: 10px 50px;
+  }
+
+  section#introduction {
+    margin-top: 90px
   }
 
   #about h2, #portfolio h2, #contact h2 {
