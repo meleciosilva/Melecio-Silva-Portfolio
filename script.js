@@ -29,4 +29,4 @@ function main() {
   insertGreeting();
 }
 
-document.addEventListener("DOMContentLoaded", main());
+// document.addEventListener("DOMContentLoaded", main());
