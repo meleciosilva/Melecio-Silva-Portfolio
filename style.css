@@ -86,6 +86,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 header h1 {
@@ -262,24 +263,24 @@ section#portfolio .item:hover {
 }
 
 #resume {
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
   height: 100%;
 }
 
+#resume:hover {
+  background-color: #fff;
+}
+
 #resume > img {
   border-radius: 10px;
   width: 100%;
-}
-
-#resume .row img {
-  border: 2px #000 solid;
-  border-radius: 5px;
+  filter: blur(4px);
 }
 
 #resume .row img:hover {
   transform: scale(1.1);
-  background-color: #F1ADFF
 }
 
 
