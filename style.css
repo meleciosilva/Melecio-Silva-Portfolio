@@ -75,7 +75,7 @@ h3 {
 
 p {
  font-family: 'Montserrat', sans-serif;
- line-height: 1.5em;
+ line-height: 2em;
  margin-bottom: 0;
 }
 
@@ -192,33 +192,7 @@ div.social-links img:hover{
   transform: scale(1.1);
 }
 
-/* ------------------- skills ------------------------- */
-
-.skills {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 5px;
-  text-align: center;
-  font-family: 'Alegreya SC', serif;
-}
-
-.skills div {
-  margin-top: 15px;
-}
-
-.skills img {
-  width: 100px;
-  height: auto;
-}
-
-@media all and (min-width: 800px) {
-  .all-skills {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-/* ------------------- main ------------------------- */
+/* ------------------- group and item layout ------------------------- */
 
 section {
   padding: 20px 8px;
@@ -233,6 +207,32 @@ section {
   flex: 1;
   margin-top: 10px;
 }
+
+@media all and (min-width: 800px) {
+
+  section {
+    padding: 10px 50px;
+  }
+
+ .group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } 
+
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .item-double {
+    flex: 2;
+  }
+
+}
+
+/* ------------------- introduction/biography ------------------------- */
+
 
 main img[src='images/professional-headshot.jpg'] {
   border-radius: 50%;
@@ -255,75 +255,105 @@ section#introduction {
   margin: 5px 0 5px;
 }
 
-section#skills .group {
-  flex-direction: column;
-  padding-bottom: 25px;
-}
-
-section#projects .item {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-}
-
-section#projects .item > img {
-  width: 100%;
-  height: auto;
-}
-
-
-#contact .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-/* ------------------- main - DESKTOP ------------------------- */
-
 @media all and (min-width: 800px) {
-
-  
-  section {
-    padding: 10px 50px;
-  }
 
   section#introduction {
     margin-top: 90px
   }
 
-  #skills h2, #projects h2, #contact h2 {
+}
+
+/* ------------------- skills ------------------------- */
+
+section#skills .group {
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Alegreya SC', serif;
+}
+
+.skills div {
+  margin-top: 15px;
+}
+
+.skills img {
+  width: 100px;
+  height: auto;
+}
+
+@media all and (min-width: 800px) {
+
+  #skills h2 {
     margin-left: 15px;
   }
 
- .group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  } 
-
-  .item {
-    flex: 1;
-    margin: 10px;
-  }
-
-  .item-double {
-    flex: 2;
-  }
-
-  section#projects .item {
-    flex-basis: 30%;
-  }
- 
   .skills {
     display: flex;
     justify-content: space-around;
     width: 50%;
   }
 
+  .all-skills {
+    display: flex;
+    flex-direction: row;
+  }
+
 }
 
-/* ------------------- contact form ------------------------- */
+/* ------------------- projects ------------------------- */
+
+  section#projects .item {
+    flex-basis: 30%;
+  }
+
+  section#projects .item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+
+  section#projects .item > img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media all and (min-width: 800px) {
+
+    #projects h2 {
+      margin-left: 15px;
+    }
+  
+  
+    section#projects .item {
+      flex-basis: 30%;
+    }
+  
+  }
+
+/* ------------------- contact ------------------------- */
+
+#contact .group {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 800px) {
+
+  #contact h2 {
+    margin-left: 15px;
+  }
+
+  form {
+    margin: 0 150px;
+  }
+
+}
 
 form fieldset {
   border: none;
@@ -331,7 +361,7 @@ form fieldset {
 }
 
 form input, textarea {
-  width: 800px;
+  width: 100%;
   background-color: #fff;
   border-radius: 8px;
   border: 3px #2d2e2e solid;
@@ -348,7 +378,7 @@ form textarea {
 
 form button {
   background-color: #2D2E2E;
-  margin: 0 auto 15px;
+  margin: 0 auto;
   display: block;
   border: none;
   border-radius: 20px;
