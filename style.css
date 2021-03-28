@@ -75,11 +75,11 @@ h3 {
 
 p {
  font-family: 'Montserrat', sans-serif;
- line-height: 2em;
+ line-height: 1.5em;
  margin-bottom: 0;
 }
 
-#introduction p, #about p {
+#introduction p {
   font-size: 17px
 }
 
@@ -255,8 +255,9 @@ section#introduction {
   margin: 5px 0 5px;
 }
 
-section#about .group {
+section#skills .group {
   flex-direction: column;
+  padding-bottom: 25px;
 }
 
 section#projects .item {
@@ -291,7 +292,7 @@ section#projects .item > img {
     margin-top: 90px
   }
 
-  #about h2, #projects h2, #contact h2 {
+  #skills h2, #projects h2, #contact h2 {
     margin-left: 15px;
   }
 
