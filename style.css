@@ -258,7 +258,11 @@ section#introduction {
 @media all and (min-width: 800px) {
 
   section#introduction {
-    margin-top: 90px
+    margin-top: 60px
+  }
+
+  #picture-name-title {
+    padding-top: 25px;
   }
 
 }
