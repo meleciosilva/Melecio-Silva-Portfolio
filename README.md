@@ -2,15 +2,16 @@
 
 ## Link
 
-[Melecio Silva's Portfolio](https://meleciosilva.github.io/my-portfolio/)
+[Melecio Silva's Portfolio](https://meleciosilva.github.io/Melecio-Silva-Portfolio/)
 
 ## Technology
 
 Built with:
 
-- HTML5 and CSS3 to create the minimalist layout/design of the webpage
-- JavaScript to build interactivity with project listings using DOM manipulation
+- HTML5 to create the structure using semantic tags where applicable
+- CSS3 to create a minimalist layout/design and produce moderate interactivity with buttons
+- Formspree to manage form submissions
 
 ## Contact
 
-- [LinkedIn](google.com)
+- [LinkedIn](https://www.linkedin.com/in/meleciosilva/)
