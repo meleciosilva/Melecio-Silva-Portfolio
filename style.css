@@ -209,7 +209,7 @@ section {
   margin-top: 10px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
 
   section {
     padding: 10px 50px;
@@ -333,11 +333,11 @@ section#projects .item > img {
   }
   
   section#projects .item {
-    flex-basis: 20%;
+    flex-basis: 2%;
   }
   }
 
-  @media all and (min-width: 700px) and (max-width: 1099px) {
+  @media all and (min-width: 600px) and (max-width: 1099px) {
   
     section#projects .item {
       flex-basis: 40%;
