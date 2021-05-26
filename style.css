@@ -205,30 +205,18 @@ section {
   margin-top: 10px;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 600px) {
 
   #projects, #contact {
     padding: 10px 50px;
   }
-
- #introduction div.group, #projects div.group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  } 
 
   #introduction div.item, #projects div.item, #contact div.item {
     flex: 1;
     margin: 10px;
   }
 
-  #introduction div.item-double, #projects div.item-double, #contact div.item-double {
-    flex: 2;
-  }
-
 }
-
-
 
 /* ------------------- introduction/biography ------------------------- */
 
@@ -256,6 +244,11 @@ main img[src='images/professional-headshot.jpg'] {
 
 @media all and (min-width: 1000px) {
 
+  #introduction div.group {
+    display: flex;
+    flex-direction: row;
+  } 
+  
   section#introduction {
     margin-top: 60px
   }
@@ -267,6 +260,10 @@ main img[src='images/professional-headshot.jpg'] {
   #introduction.group {
     display: flex;
     flex-direction: row;
+  }
+
+  #introduction div.item-double {
+    flex: 2;
   }
 
 }
@@ -329,21 +326,24 @@ section#projects .item > img {
   height: auto;
 }
 
-@media all and (min-width: 1100px) {
+@media all and (min-width: 600px) {
   
+  #projects div.group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } 
+
   #projects h2 {
     margin-left: 9px;
   }
   
-  section#projects .item {
-    flex-basis: 2%;
-  }
   }
 
-  @media all and (min-width: 600px) and (max-width: 1099px) {
+  @media all and (min-width: 700px) {
   
     section#projects .item {
-      flex-basis: 40%;
+      flex-basis: 25%;
     }
   }
 
@@ -455,7 +455,9 @@ footer {
 .modal-container #modal-toggle-1,
 .modal-container #modal-toggle-2,
 .modal-container #modal-toggle-3,
-.modal-container #modal-toggle-4
+.modal-container #modal-toggle-4,
+.modal-container #modal-toggle-5,
+.modal-container #modal-toggle-6
 {
   position: absolute;
   left: 0;
@@ -470,7 +472,9 @@ footer {
 .modal-container #modal-toggle-1:hover ~ button,
 .modal-container #modal-toggle-2:hover ~ button,
 .modal-container #modal-toggle-3:hover ~ button,
-.modal-container #modal-toggle-4:hover ~ button
+.modal-container #modal-toggle-4:hover ~ button,
+.modal-container #modal-toggle-5:hover ~ button,
+.modal-container #modal-toggle-6:hover ~ button
 { 
   background: #F1ADFF;
 }
@@ -478,7 +482,9 @@ footer {
 .modal-container #modal-toggle-1:checked,
 .modal-container #modal-toggle-2:checked,
 .modal-container #modal-toggle-3:checked,
-.modal-container #modal-toggle-4:checked
+.modal-container #modal-toggle-4:checked,
+.modal-container #modal-toggle-5:checked,
+.modal-container #modal-toggle-6:checked
 {
   width: 100vw;
   height: 100vh;
@@ -492,7 +498,9 @@ footer {
 .modal-container #modal-toggle-1:checked ~ .modal-backdrop,
 .modal-container #modal-toggle-2:checked ~ .modal-backdrop,
 .modal-container #modal-toggle-3:checked ~ .modal-backdrop,
-.modal-container #modal-toggle-4:checked ~ .modal-backdrop
+.modal-container #modal-toggle-4:checked ~ .modal-backdrop,
+.modal-container #modal-toggle-5:checked ~ .modal-backdrop,
+.modal-container #modal-toggle-6:checked ~ .modal-backdrop
 {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
@@ -508,7 +516,9 @@ footer {
 .modal-container #modal-toggle-1:checked ~ .modal-backdrop .modal-content,
 .modal-container #modal-toggle-2:checked ~ .modal-backdrop .modal-content,
 .modal-container #modal-toggle-3:checked ~ .modal-backdrop .modal-content,
-.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content
+.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content,
+.modal-container #modal-toggle-5:checked ~ .modal-backdrop .modal-content,
+.modal-container #modal-toggle-6:checked ~ .modal-backdrop .modal-content
 {
   background-color: #fff;
   max-width: 400px;
@@ -530,14 +540,18 @@ footer {
   .modal-container #modal-toggle-1:checked ~ .modal-backdrop .modal-content, 
   .modal-container #modal-toggle-2:checked ~ .modal-backdrop .modal-content,
   .modal-container #modal-toggle-3:checked ~ .modal-backdrop .modal-content,
-  .modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content
+  .modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content,
+  .modal-container #modal-toggle-5:checked ~ .modal-backdrop .modal-content,
+  .modal-container #modal-toggle-6:checked ~ .modal-backdrop .modal-content
   { left: 0; }
 }
 
 .modal-container #modal-toggle-1:checked ~ .modal-backdrop .modal-content .modal-close,
 .modal-container #modal-toggle-2:checked ~ .modal-backdrop .modal-content .modal-close,
 .modal-container #modal-toggle-3:checked ~ .modal-backdrop .modal-content .modal-close,
-.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content .modal-close
+.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content .modal-close,
+.modal-container #modal-toggle-5:checked ~ .modal-backdrop .modal-content .modal-close,
+.modal-container #modal-toggle-6:checked ~ .modal-backdrop .modal-content .modal-close
 {
   color: #000;
   position: absolute;
@@ -556,7 +570,9 @@ footer {
 .modal-container #modal-toggle-1:checked ~ .modal-backdrop .modal-content .modal-close.button,
 .modal-container #modal-toggle-2:checked ~ .modal-backdrop .modal-content .modal-close.button,
 .modal-container #modal-toggle-3:checked ~ .modal-backdrop .modal-content .modal-close.button,
-.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content .modal-close.button
+.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content .modal-close.button,
+.modal-container #modal-toggle-5:checked ~ .modal-backdrop .modal-content .modal-close.button,
+.modal-container #modal-toggle-6:checked ~ .modal-backdrop .modal-content .modal-close.button
 {
   top: initial;
   bottom: 10px;
@@ -573,7 +589,9 @@ footer {
 .modal-container #modal-toggle-1:checked ~ .modal-backdrop .modal-content .modal-close.button:hover,
 .modal-container #modal-toggle-2:checked ~ .modal-backdrop .modal-content .modal-close.button:hover,
 .modal-container #modal-toggle-3:checked ~ .modal-backdrop .modal-content .modal-close.button:hover,
-.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content .modal-close.button:hover
+.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content .modal-close.button:hover,
+.modal-container #modal-toggle-5:checked ~ .modal-backdrop .modal-content .modal-close.button:hover,
+.modal-container #modal-toggle-6:checked ~ .modal-backdrop .modal-content .modal-close.button:hover
 {
   color: #000;
   background: #F1ADFF;
@@ -582,5 +600,7 @@ footer {
 .modal-container #modal-toggle-1:checked ~ .modal-backdrop .modal-content .modal-close:hover,
 .modal-container #modal-toggle-2:checked ~ .modal-backdrop .modal-content .modal-close:hover,
 .modal-container #modal-toggle-3:checked ~ .modal-backdrop .modal-content .modal-close:hover,
-.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content .modal-close:hover
+.modal-container #modal-toggle-4:checked ~ .modal-backdrop .modal-content .modal-close:hover,
+.modal-container #modal-toggle-5:checked ~ .modal-backdrop .modal-content .modal-close:hover,
+.modal-container #modal-toggle-6:checked ~ .modal-backdrop .modal-content .modal-close:hover
 { color: #333; }
