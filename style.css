@@ -130,7 +130,7 @@ header nav ul li:last-child a {
 /* --------------- header - DESKTOP --------------- */
 
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 1000px) {
 
   header {
     display: flex;
@@ -153,19 +153,15 @@ header nav ul li:last-child a {
 /* --------------- nav links --------------- */
 
 header nav ul li a:link {
-  color: #ffffff;
+  color: #fff;
 }
 
 header nav ul li a:visited {
-  color: #F1ADFF;
+  color: #fff;
 }
 
 header nav ul li a:hover {
-  color: #82db9d;
-}
-
-header nav ul li a:active {
-  color: #CDEFD7;
+  color: #F1ADFF;
 }
 
 /* ------------------- social/contact links ------------------------- */
@@ -209,28 +205,30 @@ section {
   margin-top: 10px;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 900px) {
 
-  section {
+  #projects, #contact {
     padding: 10px 50px;
   }
 
- .group {
+ #introduction div.group, #projects div.group {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   } 
 
-  .item {
+  #introduction div.item, #projects div.item, #contact div.item {
     flex: 1;
     margin: 10px;
   }
 
-  .item-double {
+  #introduction div.item-double, #projects div.item-double, #contact div.item-double {
     flex: 2;
   }
 
 }
+
+
 
 /* ------------------- introduction/biography ------------------------- */
 
@@ -242,7 +240,7 @@ main img[src='images/professional-headshot.jpg'] {
   height: auto;
 }
 
-section#introduction {
+#introduction {
   margin-top: 130px
 }
 
@@ -256,7 +254,7 @@ section#introduction {
   margin: 5px 0 5px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1000px) {
 
   section#introduction {
     margin-top: 60px
@@ -264,6 +262,11 @@ section#introduction {
 
   #picture-name-title {
     padding-top: 25px;
+  }
+
+  #introduction.group {
+    display: flex;
+    flex-direction: row;
   }
 
 }
@@ -468,7 +471,9 @@ footer {
 .modal-container #modal-toggle-2:hover ~ button,
 .modal-container #modal-toggle-3:hover ~ button,
 .modal-container #modal-toggle-4:hover ~ button
-{ background: #F1ADFF; }
+{ 
+  background: #F1ADFF;
+}
 
 .modal-container #modal-toggle-1:checked,
 .modal-container #modal-toggle-2:checked,
