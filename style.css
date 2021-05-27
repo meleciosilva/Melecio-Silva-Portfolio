@@ -185,8 +185,16 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-div.social-links img:hover{
+div.social-links img:hover, div.social-links button:hover{
   transform: scale(1.1);
+}
+
+div.social-links button.live {
+  height: 90%;
+  color: #fff;
+  background-color: rgb(29, 146, 19);
+  border-radius: 3px;
+  border: solid black 1px;
 }
 
 /* ------------------- group and item layout ------------------------- */
