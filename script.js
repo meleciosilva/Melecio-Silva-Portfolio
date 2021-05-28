@@ -31,7 +31,7 @@ function insertProjects() {
         </div>
         <div>
           <p class="padding-x-10">${project.description}</p>
-          <button>Flip</button>
+          <button class="flipBtn">Flip</button>
         </div>
       </div>
       <div class='back'>
@@ -39,7 +39,7 @@ function insertProjects() {
         <div class ='padding-x-10 margin-b-15'>
           ${project.technology.join('')}
         </div>
-        <button>Flip</button>       
+        <button class="flipBtn">Flip</button>       
       </div>
     </div>
     `
@@ -55,7 +55,12 @@ function flipCards() {
   const cards = document.querySelectorAll(".card");
 
   for (let card of cards) {
-    card.addEventListener("click", () => card.classList.toggle("flipCard"));
+    let flipBtns = card.querySelectorAll('.flipBtn');
+
+    for (let btn of flipBtns) {
+      btn.addEventListener("click", () => card.classList.toggle("flipCard"));
+    }
+    
   }
 }
 
