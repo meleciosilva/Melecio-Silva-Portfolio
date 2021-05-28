@@ -59,6 +59,14 @@ hr {
   margin-bottom: 15%;
 }
 
+.hide {
+  display: none;
+}
+
+.line-height {
+  line-height: 275%;
+}
+
 /* --------------- Typography --------------- */
 
 h1 {
@@ -185,12 +193,12 @@ header nav ul li a:hover {
 }
 
 .social-links ol li a {
-  margin: 0 5px 0;
+  margin: 0 3px 0;
   text-decoration: none;
 }
 
 div.social-links img {
-  width: 30px !important;
+  width: 30px;
 }
 
 div.social-links img:hover {
@@ -336,12 +344,16 @@ section#projects .item {
   padding-bottom: 1%;
 }
 
-section#projects .item img {
+section#projects .item img.project-photo {
   width: 100%;
 }
 
+.project-btns {
+  display: flex;
+}
 
-@media all and (min-width: 750px) {
+
+@media all and (min-width: 825px) {
   
   #projects div.group {
     display: flex;
@@ -361,7 +373,7 @@ section#projects .item img {
 
 
   @media all and (min-width: 700px) and (max-width: 900px) {
-    .project-links {
+    .project-btns {
       display: flex;
       flex-direction: column-reverse;
       align-items: flex-start;
@@ -392,7 +404,7 @@ section#projects .item img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 470px;
+  height: 500px;
 }
 
 
@@ -403,13 +415,18 @@ section#projects .item img {
 #projects button {
   color: #fff;
   background-color: #2D2E2E;
-  border-radius: 2px;
   border: none;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   width: 100%;
-  padding: 6px 10px;
+}
+
+#projects button.live-button {
+  background-color: rgb(42, 151, 42);
+  border-radius: 4px;
+  height: 30px;
+  width: auto;
 }
 
 #projects button.flipBtn {
