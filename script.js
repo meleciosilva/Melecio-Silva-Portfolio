@@ -14,23 +14,17 @@ function insertProjects() {
         <img class='project-photo' src='${project.project_image}' alt='${project.name}' />
         <div class='row padding-x-10'>
           <h3>${project.name}</h3>
-          <div class='social-links'>
-            <ol>
-              <li>
-                <a href="${project.live_url}" target='_blank'>
-                  <button class="live">Live</button>
-                </a>
-              </li>
-              <li>
-                <a href='${project.github_url}' target='_blank'>
-                  <img src='images/icons/github-icon.png' alt='GitHub Icon' />
-                </a>
-              </li>
-            </ol>
+          <div class='project-btns'>
+            <a class='live-anchor' href="${project.live_url}" target='_blank'>
+              <button class="live-button">Live</button>
+            </a>
+            <a href='${project.github_url}' target='_blank'>
+              <img src='images/icons/github-icon.png' alt='GitHub Icon' width='30' height='30' />
+            </a>
           </div>
         </div>
         <div>
-          <p class="padding-x-10">${project.description}</p>
+          <p class="padding-x-10 line-height">${project.description}</p>
           <button class="flipBtn">Flip</button>
         </div>
       </div>
@@ -64,10 +58,26 @@ function flipCards() {
   }
 }
 
+// hide live button for undeployed projects
+
+function hideBtn() {
+  const liveAnchors = document.querySelectorAll(".live-anchor");
+
+  for (let link of liveAnchors) {
+    let href = link.getAttribute("href");
+    let liveBtn = link.querySelector('.live-button');
+
+    if (!href) {
+      liveBtn.classList.add("hide");
+    }
+  }
+}
+
 
 function main() {
   insertProjects();
   flipCards();
+  hideBtn();
 }
 
 // MAIN
