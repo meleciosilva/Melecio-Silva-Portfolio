@@ -2,7 +2,7 @@ export let projects =
 [
   {
     id: 1,
-    name: "Flash-o-matic",
+    name: "Flashcard-o-matic",
     description: "An online learning tool designed to help students study course content with flashcards.",
     github_url: "https://github.com/meleciosilva/flashcard-o-matic",
     live_url: "",
@@ -22,6 +22,7 @@ export let projects =
     project_image: "images/project-images/movies.png",
     technology: [
       '<p><strong>Express</strong> to build server and routes</p>',
+      '<p>Set up database with <strong>PostgreSQL</strong> to store information</p>',
       '<p>Built <strong>CRUD</strong> functionality with middleware functions for movies, reviews, and theaters</p>',
       '<p>Implemented <strong>Knex</strong> library to build SQL queries</p>'
     ],
@@ -43,7 +44,7 @@ export let projects =
     id: 4,
     name: "VA Breweries",
     description: "A directory of breweries, cideries, and craft beer bottle shops located in Virginia.",
-    github_url: "https://github.com/meleciosilva/breweries",
+    github_url: "https://github.com/meleciosilva/va-breweries",
     live_url: "https://va-breweries.vercel.app/",
     project_image: "images/project-images/breweries.png",
     technology: [
