@@ -379,6 +379,7 @@ section#projects .item img {
 .front {
   position: absolute;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   width: 100%;
   height: 100%;
 }
@@ -386,6 +387,7 @@ section#projects .item img {
 .back {
   position: relative;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
