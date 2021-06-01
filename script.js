@@ -14,26 +14,24 @@ function insertProjects() {
         <img class='project-photo' src='${project.project_image}' alt='${project.name}' />
         <div class='row padding-x-10'>
           <h3>${project.name}</h3>
-          <div class='project-btns'>
-            <a class='live-anchor' href="${project.live_url}" target='_blank'>
-              <button class="live-button">Live</button>
-            </a>
-            <a href='${project.github_url}' target='_blank'>
-              <img src='images/icons/github-icon.png' alt='GitHub Icon' width='30' height='30' />
-            </a>
-          </div>
         </div>
         <div>
           <p class="padding-x-10 line-height">${project.description}</p>
-          <button class="flipBtn">Flip</button>
+          <div class='project-btns'>
+            <a class='live-anchor btn green' href="${project.live_url}" target='_blank'>Live</a>
+            <a class='btn dark' href='${project.github_url}' target='_blank'>GitHub</a>
+            <button class="flipBtn btn dark">Flip</button>
+          </div>
         </div>
       </div>
       <div class='back'>
-        <h3 class ='padding-x-10 centerText'><strong>${project.name}</strong></h3>
+        <div class="flex-row">
+          <img class="flipBtn" src="images/icons/back-icon.png" alt="go back" width=30/>       
+          <h3 class ='padding-x-10'><strong>${project.name}</strong></h3>
+        </div>  
         <div class ='padding-x-10 margin-b-15'>
           ${project.technology.join('')}
         </div>
-        <button class="flipBtn">Flip</button>       
       </div>
     </div>
     `
@@ -65,10 +63,8 @@ function hideBtn() {
 
   for (let link of liveAnchors) {
     let href = link.getAttribute("href");
-    let liveBtn = link.querySelector('.live-button');
-
     if (!href) {
-      liveBtn.classList.add("hide");
+      link.classList.add("hide");
     }
   }
 }
