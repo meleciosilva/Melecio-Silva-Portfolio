@@ -26,7 +26,7 @@ function insertProjects() {
       </div>
       <div class='back'>
         <div class="flex-row">
-          <img class="flipBtn" src="images/icons/back-icon.png" alt="go back" width=30/>       
+          <img class="flipBtn" src="images/icons/back-icon.png" alt="go back" width=35 height=35/>       
           <h3 class ='padding-x-10'><strong>${project.name}</strong></h3>
         </div>  
         <div class ='padding-x-10 margin-b-15'>
