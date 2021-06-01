@@ -451,7 +451,7 @@ div.back p {
   }
 
   form {
-    margin: 0 25%;
+    margin: 0 20%;
   }
 
 }
@@ -482,13 +482,17 @@ form button {
   margin: 0 auto;
   display: block;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
   cursor: pointer;
+}
+
+::placeholder {
+  font-family: 'Montserrat', sans-serif;
 }
 
 form button:hover {
