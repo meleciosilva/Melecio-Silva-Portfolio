@@ -5,12 +5,12 @@ export let projects =
     name: "Flashcard-o-matic",
     description: "An online learning tool designed to help students study course content with flashcards.",
     github_url: "https://github.com/meleciosilva/flashcard-o-matic",
-    live_url: "",
+    live_url: "https://flashcard-o-matic-peach.vercel.app",
     project_image: "images/project-images/flashcards.png",
     technology: [
-      '<p>Built with <strong>React</strong> to develop an interactive user interface and experience</p>',
-      '<p>Used <strong>Bootstrap</strong> to design the user-interface</p>',
-      '<p>Implemented<strong> React Hooks</strong> and <strong>React Router</strong> to manage API calls for data and component routing, respectively</p>'
+      '<p>Built with <strong>React</strong> and <strong>Bootstrap</strong> to develop an interactive user interface and experience</p>',
+      '<p>Implemented<strong> React Hooks</strong> and <strong>React Router</strong> to manage API calls for data and component routing, respectively</p>',
+      '<p><strong>Express</strong> to build server and routes</p>'
     ],
   },
   {
