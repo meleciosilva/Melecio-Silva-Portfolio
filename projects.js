@@ -68,7 +68,7 @@ export let projects =
   },
   {
     id: 6,
-    name: "Pomodoro",
+    name: "Pomodoro Timer",
     description: "An online timer designed to be used in alternating intervals of focus and rest time to enhance productivity.",
     github_url: "https://github.com/meleciosilva/pomodoro-timer",
     live_url: "https://project-pomodoro-timer-qualified-1-eight.vercel.app/",
