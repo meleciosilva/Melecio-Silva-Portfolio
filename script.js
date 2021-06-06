@@ -16,7 +16,7 @@ function insertProjects() {
           <h3>${project.name}</h3>
         </div>
         <div>
-          <p class="padding-x-10 line-height">${project.description}</p>
+          <p class="padding-x-10">${project.description}</p>
           <div class='project-btns'>
             <a class='live-anchor btn green' href="${project.live_url}" target='_blank'>Live</a>
             <a class='btn dark' href='${project.github_url}' target='_blank'>GitHub</a>

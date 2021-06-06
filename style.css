@@ -55,10 +55,6 @@ body {
   margin-bottom: 15%;
 }
 
-.line-height {
-  line-height: 275%;
-}
-
 hr {
   border: 0;
   height: 0;
@@ -371,6 +367,7 @@ section#projects .item img.project-photo {
 .project-btns {
   display: flex;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn {
@@ -431,7 +428,7 @@ div.back p {
 
 #projects button, .btn {
   color: #fff;
-  border: solid #fff 1px;
+  border: 1px solid #fff;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -493,6 +490,7 @@ form button {
 
 ::placeholder {
   font-family: 'Montserrat', sans-serif;
+  padding: 0 5px;
 }
 
 form button:hover {
