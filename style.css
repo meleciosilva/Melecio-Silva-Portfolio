@@ -376,13 +376,17 @@ section#projects .item img.project-photo {
   padding: 10px 0;
 }
 
-@media all and (min-width: 850px) {
+@media all and (min-width: 800px) {
   
   #projects div.group {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  } 
+  }
+
+  #projects div.group>* {
+    flex: 1 1 31%;
+  }
 
   #projects h2 {
     margin-left: 9px;
