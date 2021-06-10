@@ -2,6 +2,19 @@ export let projects =
 [
   {
     id: 1,
+    name: "Restaurant Reservations",
+    description: "A restaurant reservations platform designed to manage booking, seating, and managing reservations.",
+    github_url: "https://github.com/meleciosilva/reservations",
+    live_url: "https://restaurant-reservation-frontend-gilt.vercel.app/dashboard?date=2020-12-30",
+    project_image: "images/project-images/reservations.png",
+    technology: [
+      "<p>Built with <strong>Bootstrap</strong>, <strong>React</strong>, and <strong>Express</strong></p>",
+      "<p>Set up database with <strong>PostgreSQL</strong> and <strong>Knex</strong> to build SQL queries</p>",
+      "<p>Implemented <strong>Express Validation</strong> middleware to validate requests and manage errors</p>",
+    ],
+  },
+  {
+    id: 2,
     name: "Flashcard-o-matic",
     description: "An online learning tool designed to help students study course content with flashcards.",
     github_url: "https://github.com/meleciosilva/flashcard-o-matic",
@@ -11,19 +24,6 @@ export let projects =
       "<p>Built with <strong>React</strong> and <strong>Bootstrap</strong> to develop an interactive user interface and experience</p>",
       "<p>Implemented<strong> React Hooks</strong> and <strong>React Router</strong> to manage API calls and component routing</p>",
       "<p><strong>Express</strong> to build server and routes</p>"
-    ],
-  },
-  {
-    id: 2,
-    name: "Restaurant Reservations",
-    description: "A restaurant reservations platform designed to manage booking, seating, and managing reservations.",
-    github_url: "https://github.com/meleciosilva/reservations",
-    live_url: "https://restaurant-reservation-frontend-gilt.vercel.app/dashboard?date=2020-12-30",
-    project_image: "images/project-images/reservations.png",
-    technology: [
-      "<p>Built with <strong>Bootstrap</strong>, <strong>React</strong>, and <strong>Express</strong></p>",
-      "<p>Set up database with <strong>PostgreSQL</strong> and <strong>Knex</strong> to build SQL queries</p>",
-      "<p>Implemented <strong>Express Validation</strong> middleware and to validate requests and manage errors</p>",
     ],
   },
   {
