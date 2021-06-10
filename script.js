@@ -2,7 +2,6 @@ import { projects } from './projects.js';
 
 // inserts project listings
 const projectGroup = document.querySelector("#projects div.group");
-console.log(projectGroup)
 
 function insertProjects() {
 
